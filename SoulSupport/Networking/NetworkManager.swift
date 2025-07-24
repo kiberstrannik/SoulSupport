@@ -11,7 +11,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     private init() {}
     
-    // Читаем ключ из Secrets.plist
+   
     private var apiKey: String {
         guard let filePath = Bundle.main.path(forResource: "Secrets", ofType: "plist"),
               let plist = NSDictionary(contentsOfFile: filePath),

@@ -13,7 +13,7 @@ struct WelcomeView: View {
 
     var body: some View {
         if showChat {
-            TopicSelectionView() // ← твой готовый чат, всё подхватится
+            TopicSelectionView() 
         } else {
             ZStack {
                 Color.white.ignoresSafeArea()
