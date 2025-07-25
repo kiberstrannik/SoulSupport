@@ -10,6 +10,10 @@ import SwiftUI
 class ChatViewModel: ObservableObject {
     @Published var messages: [Message] = []
     @Published var isTyping: Bool = false
+    
+    func clearMessages() {
+        messages.removeAll()
+    }
 
     func sendMessage(_ text: String) {
         let userMessage = Message(sender: .user, text: text)

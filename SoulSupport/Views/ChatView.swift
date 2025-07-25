@@ -15,6 +15,7 @@ struct ChatView: View {
 
     var body: some View {
         VStack {
+
             ScrollViewReader { proxy in
                 ScrollView {
                     VStack(spacing: 8) {
@@ -22,6 +23,7 @@ struct ChatView: View {
                             ChatBubbleView(message: message)
                                 .id(message.id)
                         }
+
 
                         if viewModel.isTyping {
                             HStack {
@@ -44,6 +46,20 @@ struct ChatView: View {
                     }
                 }
             }
+            Button(action: {
+                   viewModel.clearMessages()
+               }) {
+                   Text("Clear Chat")
+                       .fontWeight(.semibold)
+                       .foregroundColor(.white)
+                       .padding(.vertical, 10)
+                       .padding(.horizontal, 20)
+                       .background(Color.cyan)
+                       .cornerRadius(10)
+                       .shadow(color: Color.cyan.opacity(0.3), radius: 4, x: 0, y: 2)
+               }
+               .padding(.bottom, 5)
+
 
             // Ввод сообщения + кнопка
             HStack {

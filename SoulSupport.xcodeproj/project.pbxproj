@@ -29,35 +29,9 @@
 		452ADDA42E2EEB770089299B /* SoulSupportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulSupportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		452ADDD72E2EF3A10089299B /* Exceptions for "SoulSupport" folder in "SoulSupport" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Helpers/.gitignore,
-				Secrets.plist,
-			);
-			target = 452ADD892E2EEB750089299B /* SoulSupport */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		452ADDD82E2EF3A10089299B /* Exceptions for "SoulSupport" folder in "Compile Sources" phase from "SoulSupport" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 452ADD862E2EEB750089299B /* Sources */;
-			membershipExceptions = (
-				Helpers/.gitignore,
-				Secrets.plist,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		452ADD8C2E2EEB750089299B /* SoulSupport */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				452ADDD72E2EF3A10089299B /* Exceptions for "SoulSupport" folder in "SoulSupport" target */,
-				452ADDD82E2EF3A10089299B /* Exceptions for "SoulSupport" folder in "Compile Sources" phase from "SoulSupport" target */,
-			);
 			path = SoulSupport;
 			sourceTree = "<group>";
 		};
